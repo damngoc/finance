@@ -16,6 +16,11 @@ export const ROUTES = {
     BANK_ACCOUNTS: '/admin/bank-accounts',
     TELEGRAM_CONFIG: '/admin/telegram-config',
     ADMIN_ACCOUNTS: '/admin/admin-accounts',
+    TRADE_ORDERS: '/admin/trade-orders',
+    TRADE_ORDERS_HISTORY: '/admin/trade-orders-history',
+    FINANCE_PACKAGES: '/admin/finance-packages',
+    MARGIN_PACKAGES: '/admin/margin-packages',
+    WEB_CONFIG: '/admin/web-config',
   },
 
   // Client

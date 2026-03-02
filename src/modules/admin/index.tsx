@@ -10,6 +10,11 @@ import AdminTransactionsViewPage from './pages/AdminTransactionViewPage'
 import AdminBankAccountsPage from './pages/AdminBankAccountPage'
 import AdminTelegramConfigPage from './pages/AdminTelegramConfigPage'
 import AdminAccountsPage from './pages/AdminAccountPage'
+import AdminTradeOrdersPage from './pages/AdminTradeOrderPage'
+import AdminTradeOrdersHistoryPage from './pages/AdminTradeOrdersHistoryPage'
+import AdminFinancePackagesPage from './pages/AdminFinancePackagesPage'
+import AdminMarginPackagesPage from './pages/AdminMarginPackagesPage'
+import AdminWebConfigPage from './pages/AdminWebConfigPage'
 import { ROUTES } from '@/shared/constants'
 
 export const AdminRoutes: React.FC = () => (
@@ -35,8 +40,13 @@ export const AdminRoutes: React.FC = () => (
       <Route path="admin-accounts" element={<AdminAccountsPage />} />
       <Route path="transactions" element={<AdminTransactionsPage />} />
       <Route path="transactions-view" element={<AdminTransactionsViewPage />} />
+      <Route path="trade-orders" element={<AdminTradeOrdersPage />} />
+      <Route path="trade-orders-history" element={<AdminTradeOrdersHistoryPage />} />
+      <Route path="finance-packages" element={<AdminFinancePackagesPage />} />
+      <Route path="margin-packages" element={<AdminMarginPackagesPage />} />
       <Route path="bank-accounts" element={<AdminBankAccountsPage />} />
       <Route path="telegram-config" element={<AdminTelegramConfigPage />} />
+      <Route path="web-config" element={<AdminWebConfigPage />} />
     </Route>
   </Routes>
 )

@@ -10,8 +10,13 @@ const navItems = [
   { path: ROUTES.ADMIN.ADMIN_ACCOUNTS, icon: '🛡️', label: 'Quản lý Admin' },
   { path: ROUTES.ADMIN.TRANSACTIONS, icon: '💰', label: 'Nạp/Rút cần xử lý' },
   { path: ROUTES.ADMIN.TRANSACTIONS_VIEW, icon: '📋', label: 'Nạp/Rút đã xử lý' },
-  { path: ROUTES.ADMIN.BANK_ACCOUNTS, icon: '🏦', label: 'Cáu hình Bank' },
+  { path: ROUTES.ADMIN.TRADE_ORDERS,      icon: '📈', label: 'Mua/Bán cần xử lý' },
+  { path: ROUTES.ADMIN.TRADE_ORDERS_HISTORY, icon: '📜', label: 'Mua/Bán đã xử lý' },
+  { path: ROUTES.ADMIN.FINANCE_PACKAGES, icon: '💼', label: 'Gói tài chính' },
+  { path: ROUTES.ADMIN.MARGIN_PACKAGES, icon: '🔒', label: 'Gói ký quỹ' },
+  { path: ROUTES.ADMIN.BANK_ACCOUNTS, icon: '🏦', label: 'Cấu hình Bank' },
   { path: ROUTES.ADMIN.TELEGRAM_CONFIG, icon: '✈️', label: 'Cấu hình Telegram' },
+  { path: ROUTES.ADMIN.WEB_CONFIG, icon: '🌐', label: 'Cấu hình Web' },
 ]
 
 export const AdminLayout: React.FC = () => {
