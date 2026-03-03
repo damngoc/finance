@@ -6,6 +6,10 @@ import ClientDashboardPage from './pages/ClientDashboardPage'
 import ClientProfilePage from './pages/ClientProfilePage'
 import ClientLoginPage from './pages/ClientLoginPage'
 import ClientTransactionsPage from './pages/ClientTransactionPage'
+import ClientRegisterPage from './pages/ClientRegisterPage'
+import ClientDepositPage from './pages/ClientDepositPage'
+import ClientBankLinkPage from './pages/ClientBankLinkPage'
+import ClientWithdrawPage from './pages/ClientWithdrawPage'
 import { ROUTES } from '@/shared/constants'
 
 const ClientSettingsPage = () => (
@@ -25,6 +29,14 @@ export const ClientRoutes: React.FC = () => (
       }
     />
     <Route
+      path="register"
+      element={
+        <GuestOnly redirectTo={ROUTES.CLIENT.DASHBOARD}>
+          <ClientRegisterPage />
+        </GuestOnly>
+      }
+    />
+    <Route
       element={
         <RequireAuth requiredRole="client">
           <ClientLayout />
@@ -36,6 +48,9 @@ export const ClientRoutes: React.FC = () => (
       <Route path="profile" element={<ClientProfilePage />} />
       <Route path="transactions" element={<ClientTransactionsPage />} />
       <Route path="settings" element={<ClientSettingsPage />} />
+      <Route path="deposit" element={<ClientDepositPage />} />
+      <Route path="withdraw" element={<ClientWithdrawPage />} />
+      <Route path="bank-link" element={<ClientBankLinkPage />} />
     </Route>
   </Routes>
 )

@@ -7,7 +7,10 @@ import { ROUTES } from '@/shared/constants'
 const navItems = [
   { path: ROUTES.CLIENT.DASHBOARD, icon: '🏠', label: 'Dashboard' },
   { path: ROUTES.CLIENT.PROFILE, icon: '👤', label: 'Hồ sơ' },
-  { path: ROUTES.CLIENT.TRANSACTIONS, icon: '💳', label: 'Nạp / Rút tiền' },
+  { path: ROUTES.CLIENT.DEPOSIT, icon: '💰', label: 'Nạp tiền' },
+  { path: ROUTES.CLIENT.WITHDRAW, icon: '💸', label: 'Rút tiền' },
+  { path: ROUTES.CLIENT.TRANSACTIONS, icon: '💳', label: 'Lịch sử nạp/rút' },
+  { path: ROUTES.CLIENT.BANK_LINK, icon: '🏦', label: 'Liên kết ngân hàng' },
   { path: ROUTES.CLIENT.SETTINGS, icon: '⚙️', label: 'Cài đặt' },
 ]
 

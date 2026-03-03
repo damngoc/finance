@@ -86,6 +86,9 @@ const ClientLoginPage: React.FC = () => {
           </form>
 
           <p className="text-center text-xs text-slate-600 mt-4">
+            Nếu chưa có tài khoản? <a href={ROUTES.CLIENT.REGISTER} className="text-violet-400 hover:text-violet-300 transition-colors">Đăng ký ngay</a>
+          </p>
+          <p className="text-center text-xs text-slate-600 mt-4">
             Hint: password = <code className="text-violet-400">123456</code>
           </p>
         </div>

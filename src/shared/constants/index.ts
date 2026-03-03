@@ -27,10 +27,14 @@ export const ROUTES = {
   CLIENT: {
     ROOT: '/app',
     LOGIN: '/app/login',
+    REGISTER: '/app/register',
     DASHBOARD: '/app/dashboard',
     PROFILE: '/app/profile',
     TRANSACTIONS: '/app/transactions',
     SETTINGS: '/app/settings',
+    DEPOSIT: '/app/deposit',
+    WITHDRAW: '/app/withdraw',
+    BANK_LINK: '/app/bank-link',
   },
 } as const
 

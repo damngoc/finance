@@ -72,3 +72,11 @@ export const adminTransactionService = {
     return { ...tx }
   },
 }
+
+// ─── Exported so client service can push new transactions ────────
+export const MOCK_TRANSACTIONS_REF = {
+  push: (tx: Transaction) => {
+    MOCK_TRANSACTIONS.unshift(tx)
+  },
+  getNextId: () => MOCK_TRANSACTIONS.length + 1,
+}

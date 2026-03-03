@@ -67,6 +67,13 @@ export const adminUserService = {
     return { ...user }
   },
 
+  getById: async (id: number): Promise<User> => {
+    await new Promise(r => setTimeout(r, 200))
+    const user = MOCK_USERS.find(u => u.id === id)
+    if (!user) throw new Error('Không tìm thấy user')
+    return { ...user }
+  },
+
   update: async (id: number, payload: UpdateUserDto): Promise<User> => {
     // const { data } = await apiClient.patch(`/admin/users/${id}`, payload)
     // return data
