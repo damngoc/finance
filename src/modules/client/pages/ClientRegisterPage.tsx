@@ -144,10 +144,6 @@ const ClientRegisterPage: React.FC = () => {
       </div>
 
       <div className="relative w-full max-w-sm">
-        <button onClick={() => navigate(ROUTES.CLIENT.LOGIN)} className="flex items-center gap-2 text-slate-400 hover:text-white text-sm mb-6 transition-colors">
-          ← Quay lại đăng nhập
-        </button>
-
         <div className="text-center mb-6">
           <div className="w-14 h-14 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-violet-900/50">
             <span className="text-white text-2xl">✦</span>

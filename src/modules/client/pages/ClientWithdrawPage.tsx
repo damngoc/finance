@@ -158,7 +158,7 @@ const ClientWithdrawPage: React.FC = () => {
   const percent = balance > 0 ? Math.min(100, (numAmount / balance) * 100) : 0
 
   return (
-    <div className="max-w-lg mx-auto space-y-5">
+    <div className="space-y-5">
 
       {/* Header */}
       <div className="flex items-center gap-3">

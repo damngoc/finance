@@ -159,7 +159,7 @@ const UsdtSection: React.FC = () => {
           <span className={`text-xs px-2 py-0.5 rounded-full ${cfg.bg} ${cfg.color} border ${cfg.border}`}>{selected}</span>
         </div>
         <div className="px-4 py-4">
-          <p className="text-xs text-slate-500 mb-2">Địa chỉ ví nhận tiền</p>
+          <p className="text-xs text-white-500 mb-2">Địa chỉ ví nhận tiền</p>
           <div className={`p-3 bg-slate-900 border ${cfg.border} rounded-xl`}>
             <p className="font-mono text-xs text-white break-all leading-relaxed tracking-wide">{wallet.address}</p>
           </div>
@@ -258,7 +258,7 @@ const ClientDepositPage: React.FC = () => {
   }
 
   return (
-    <div className="max-w-lg mx-auto space-y-5">
+    <div className="space-y-5">
 
       {/* Header */}
       <div className="flex items-center gap-3">

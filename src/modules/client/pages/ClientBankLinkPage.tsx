@@ -111,7 +111,7 @@ const ClientBankLinkPage: React.FC = () => {
   const isLinked = !!(original?.bankName && original?.bankAccountNumber)
 
   return (
-    <div className="max-w-lg mx-auto space-y-5">
+    <div className="space-y-5">
 
       {/* Header */}
       <div className="flex items-center gap-3">

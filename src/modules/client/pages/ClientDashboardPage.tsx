@@ -39,7 +39,7 @@ const ClientDashboardPage: React.FC = () => {
       )}
 
       {/* Chart + Quick actions */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6">
         {/* Chart */}
         <div className="lg:col-span-2 bg-white rounded-2xl border border-slate-100 p-6 shadow-sm">
           <div className="flex items-center justify-between mb-6">
