@@ -30,7 +30,7 @@ const ClientDashboardPage: React.FC = () => {
       {statsLoading && <div className="flex justify-center py-8"><Spinner size="lg" className="text-indigo-500" /></div>}
       {statsError && <ErrorAlert message={statsError} />}
       {stats && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <StatCard label="Tổng Users" value={stats.totalUsers.toLocaleString()} icon="👥" color="indigo" trend={{ value: 12, label: 'tháng này' }} />
           <StatCard label="Users Hoạt động" value={stats.activeUsers.toLocaleString()} icon="✅" color="emerald" trend={{ value: 8, label: 'tháng này' }} />
           <StatCard label="Users mới" value={stats.newUsersThisMonth.toLocaleString()} icon="🆕" color="amber" trend={{ value: 5, label: 'tháng này' }} />

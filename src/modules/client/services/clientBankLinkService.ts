@@ -11,6 +11,7 @@ export interface BankLinkInfo {
 export const clientBankLinkService = {
   getMyBankInfo: async (userId: number): Promise<BankLinkInfo> => {
     // TODO: const { data } = await apiClient.get('/user/bank-info')
+    // return data
     await new Promise(r => setTimeout(r, 350))
     const user = await adminUserService.getById(userId)
     return {

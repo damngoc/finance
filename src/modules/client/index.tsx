@@ -10,6 +10,7 @@ import ClientRegisterPage from './pages/ClientRegisterPage'
 import ClientDepositPage from './pages/ClientDepositPage'
 import ClientBankLinkPage from './pages/ClientBankLinkPage'
 import ClientWithdrawPage from './pages/ClientWithdrawPage'
+import ClientSupportPage from './pages/ClientSupportPage'
 import { ROUTES } from '@/shared/constants'
 
 const ClientSettingsPage = () => (
@@ -51,6 +52,7 @@ export const ClientRoutes: React.FC = () => (
       <Route path="deposit" element={<ClientDepositPage />} />
       <Route path="withdraw" element={<ClientWithdrawPage />} />
       <Route path="bank-link" element={<ClientBankLinkPage />} />
+      <Route path="support" element={<ClientSupportPage />} />
     </Route>
   </Routes>
 )
