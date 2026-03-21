@@ -4,12 +4,13 @@ import { useAuth } from '@/shared/hooks/useAuth'
 import { ROUTES } from '@/shared/constants'
 
 const navItems = [
-  { path: ROUTES.CLIENT.DASHBOARD,    icon: '🏠', label: 'Trang chủ' },
-  { path: ROUTES.CLIENT.DEPOSIT,      icon: '💰', label: 'Nạp tiền' },
-  { path: ROUTES.CLIENT.WITHDRAW,     icon: '💸', label: 'Rút tiền' },
-  { path: ROUTES.CLIENT.SUPPORT,      icon: '🎧', label: 'CSKH' },
+  { path: ROUTES.CLIENT.DASHBOARD, icon: '🏠', label: 'Trang chủ' },
+  { path: ROUTES.CLIENT.DEPOSIT, icon: '💰', label: 'Nạp tiền' },
+  // { path: ROUTES.CLIENT.WITHDRAW, icon: '💸', label: 'Rút tiền' },
+  { path: ROUTES.CLIENT.CHART, icon: '📊', label: 'Chart' },
+  { path: ROUTES.CLIENT.SUPPORT, icon: '🎧', label: 'CSKH' },
   // { path: ROUTES.CLIENT.TRANSACTIONS, icon: '📋', label: 'Lịch sử' },
-  { path: ROUTES.CLIENT.PROFILE,      icon: '👤', label: 'Hồ sơ' },
+  { path: ROUTES.CLIENT.PROFILE, icon: '👤', label: 'Hồ sơ' },
 ]
 
 export const ClientLayout: React.FC = () => {

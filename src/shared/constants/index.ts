@@ -36,6 +36,7 @@ export const ROUTES = {
     WITHDRAW: '/app/withdraw',
     BANK_LINK: '/app/bank-link',
     SUPPORT: '/app/support',
+    CHART: '/app/chart',
   },
 } as const
 
